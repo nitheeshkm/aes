@@ -1,0 +1,20 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../advanced_encryption_algorithm.srcs/sources_1/new/addRoundkey.v" \
+"../../../../advanced_encryption_algorithm.srcs/sources_1/new/keySchedule.v" \
+"../../../../advanced_encryption_algorithm.srcs/sources_1/new/mixColumns.v" \
+"../../../../advanced_encryption_algorithm.srcs/sources_1/new/mixColumns_32bit.v" \
+"../../../../advanced_encryption_algorithm.srcs/sources_1/new/mixColumns_8bit0.v" \
+"../../../../advanced_encryption_algorithm.srcs/sources_1/new/mixColumns_8bit1.v" \
+"../../../../advanced_encryption_algorithm.srcs/sources_1/new/mixColumns_8bit2.v" \
+"../../../../advanced_encryption_algorithm.srcs/sources_1/new/mixColumns_8bit3.v" \
+"../../../../advanced_encryption_algorithm.srcs/sources_1/new/shiftRows.v" \
+"../../../../advanced_encryption_algorithm.srcs/sources_1/new/subBytes.v" \
+"../../../../advanced_encryption_algorithm.srcs/sources_1/new/top.v" \
+"../../../../advanced_encryption_algorithm.srcs/sim_1/new/top_testbench.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

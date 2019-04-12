@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../advanced_encryption_algorithm.srcs/sources_1/new/galois_field_s_box_gen.v" \
+"../../../../advanced_encryption_algorithm.srcs/sim_1/new/g_f_s_box_gen_testbench.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

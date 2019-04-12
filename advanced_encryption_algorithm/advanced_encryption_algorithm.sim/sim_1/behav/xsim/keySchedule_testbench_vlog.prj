@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../advanced_encryption_algorithm.srcs/sources_1/new/keySchedule.v" \
+"../../../../advanced_encryption_algorithm.srcs/sim_1/new/keySchedule_testbench.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

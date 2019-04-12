@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="top_testbench_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="top_testbench" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="495100000fs"></ZoomStartTime>
+      <ZoomEndTime time="561100001fs"></ZoomEndTime>
+      <Cursor1Time time="530000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="204"></NameColumnWidth>
+      <ValueColumnWidth column_width="134"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="26" />
+   <wvobject fp_name="/top_testbench/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_testbench/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_testbench/start" type="logic">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_testbench/uut/encryption_done" type="logic">
+      <obj_property name="ElementShortName">encryption_done</obj_property>
+      <obj_property name="ObjectShortName">encryption_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_testbench/i" type="array">
+      <obj_property name="ElementShortName">i[127:0]</obj_property>
+      <obj_property name="ObjectShortName">i[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_testbench/k" type="array">
+      <obj_property name="ElementShortName">k[127:0]</obj_property>
+      <obj_property name="ObjectShortName">k[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_testbench/o" type="array">
+      <obj_property name="ElementShortName">o[127:0]</obj_property>
+      <obj_property name="ObjectShortName">o[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_testbench/uut/currentState" type="array">
+      <obj_property name="ElementShortName">currentState[2:0]</obj_property>
+      <obj_property name="ObjectShortName">currentState[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_testbench/uut/nextState" type="array">
+      <obj_property name="ElementShortName">nextState[2:0]</obj_property>
+      <obj_property name="ObjectShortName">nextState[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_testbench/uut/addRoundkey_out" type="array">
+      <obj_property name="ElementShortName">addRoundkey_out[127:0]</obj_property>
+      <obj_property name="ObjectShortName">addRoundkey_out[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_testbench/uut/subBytes_out" type="array">
+      <obj_property name="ElementShortName">subBytes_out[127:0]</obj_property>
+      <obj_property name="ObjectShortName">subBytes_out[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_testbench/uut/shiftRows_out" type="array">
+      <obj_property name="ElementShortName">shiftRows_out[127:0]</obj_property>
+      <obj_property name="ObjectShortName">shiftRows_out[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_testbench/uut/start_addInitkey" type="logic">
+      <obj_property name="ElementShortName">start_addInitkey</obj_property>
+      <obj_property name="ObjectShortName">start_addInitkey</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_testbench/uut/start_subBytes" type="logic">
+      <obj_property name="ElementShortName">start_subBytes</obj_property>
+      <obj_property name="ObjectShortName">start_subBytes</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_testbench/uut/start_shiftRows" type="logic">
+      <obj_property name="ElementShortName">start_shiftRows</obj_property>
+      <obj_property name="ObjectShortName">start_shiftRows</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_testbench/uut/start_mixColumns" type="logic">
+      <obj_property name="ElementShortName">start_mixColumns</obj_property>
+      <obj_property name="ObjectShortName">start_mixColumns</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_testbench/uut/start_addRoundkey" type="logic">
+      <obj_property name="ElementShortName">start_addRoundkey</obj_property>
+      <obj_property name="ObjectShortName">start_addRoundkey</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_testbench/uut/rst_counter" type="logic">
+      <obj_property name="ElementShortName">rst_counter</obj_property>
+      <obj_property name="ObjectShortName">rst_counter</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_testbench/uut/mixColumns_out" type="array">
+      <obj_property name="ElementShortName">mixColumns_out[127:0]</obj_property>
+      <obj_property name="ObjectShortName">mixColumns_out[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_testbench/uut/key" type="array">
+      <obj_property name="ElementShortName">key[127:0]</obj_property>
+      <obj_property name="ObjectShortName">key[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_testbench/uut/counter" type="array">
+      <obj_property name="ElementShortName">counter[3:0]</obj_property>
+      <obj_property name="ObjectShortName">counter[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_testbench/uut/key_in" type="array">
+      <obj_property name="ElementShortName">key_in[127:0]</obj_property>
+      <obj_property name="ObjectShortName">key_in[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_testbench/uut/key_generated" type="logic">
+      <obj_property name="ElementShortName">key_generated</obj_property>
+      <obj_property name="ObjectShortName">key_generated</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_testbench/uut/fetch" type="logic">
+      <obj_property name="ElementShortName">fetch</obj_property>
+      <obj_property name="ObjectShortName">fetch</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_testbench/uut/fetch_1" type="logic">
+      <obj_property name="ElementShortName">fetch_1</obj_property>
+      <obj_property name="ObjectShortName">fetch_1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_testbench/uut/fetch_en" type="logic">
+      <obj_property name="ElementShortName">fetch_en</obj_property>
+      <obj_property name="ObjectShortName">fetch_en</obj_property>
+   </wvobject>
+</wave_config>

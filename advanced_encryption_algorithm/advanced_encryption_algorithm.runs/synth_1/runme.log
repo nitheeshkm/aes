@@ -1,0 +1,1635 @@
+
+*** Running vivado
+    with args -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+Command: synth_design -top top -part xc7vx485tffg1761-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7vx485t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7vx485t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 10212 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 409.902 ; gain = 98.234
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+	Parameter BLOCK_SIZE bound to: 128 - type: integer 
+	Parameter B_S_DIV_8 bound to: 16 - type: integer 
+	Parameter fsm_idle bound to: 3'b000 
+	Parameter fsm_addInitkey bound to: 3'b001 
+	Parameter fsm_subBytes bound to: 3'b010 
+	Parameter fsm_shiftRows bound to: 3'b011 
+	Parameter fsm_mixColumns_1 bound to: 3'b100 
+	Parameter fsm_mixColumns_2 bound to: 3'b101 
+	Parameter fsm_addRoundkey bound to: 3'b110 
+INFO: [Synth 8-6157] synthesizing module 'addRoundkey' [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/addRoundkey.v:23]
+	Parameter BLOCK_SIZE bound to: 128 - type: integer 
+	Parameter B_S_DIV_8 bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'addRoundkey' (1#1) [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/addRoundkey.v:23]
+INFO: [Synth 8-6157] synthesizing module 'subBytes' [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/subBytes.v:23]
+	Parameter BLOCK_SIZE bound to: 128 - type: integer 
+	Parameter B_S_DIV_8 bound to: 16 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/subBytes.v:64]
+INFO: [Synth 8-226] default block is never used [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/subBytes.v:64]
+INFO: [Synth 8-226] default block is never used [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/subBytes.v:64]
+INFO: [Synth 8-226] default block is never used [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/subBytes.v:64]
+INFO: [Synth 8-226] default block is never used [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/subBytes.v:64]
+INFO: [Synth 8-226] default block is never used [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/subBytes.v:64]
+INFO: [Synth 8-226] default block is never used [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/subBytes.v:64]
+INFO: [Synth 8-226] default block is never used [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/subBytes.v:64]
+INFO: [Synth 8-226] default block is never used [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/subBytes.v:64]
+INFO: [Synth 8-226] default block is never used [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/subBytes.v:64]
+INFO: [Synth 8-226] default block is never used [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/subBytes.v:64]
+INFO: [Synth 8-226] default block is never used [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/subBytes.v:64]
+INFO: [Synth 8-226] default block is never used [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/subBytes.v:64]
+INFO: [Synth 8-226] default block is never used [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/subBytes.v:64]
+INFO: [Synth 8-226] default block is never used [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/subBytes.v:64]
+INFO: [Synth 8-226] default block is never used [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/subBytes.v:64]
+INFO: [Synth 8-6155] done synthesizing module 'subBytes' (2#1) [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/subBytes.v:23]
+INFO: [Synth 8-6157] synthesizing module 'shiftRows' [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/shiftRows.v:23]
+	Parameter BLOCK_SIZE bound to: 128 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'shiftRows' (3#1) [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/shiftRows.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mixColumns' [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/mixColumns.v:25]
+	Parameter BLOCK_SIZE bound to: 128 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'mixColumns_32bit' [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/mixColumns_32bit.v:22]
+INFO: [Synth 8-6157] synthesizing module 'mixColumns_8bit0' [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/mixColumns_8bit0.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'mixColumns_8bit0' (4#1) [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/mixColumns_8bit0.v:22]
+INFO: [Synth 8-6157] synthesizing module 'mixColumns_8bit1' [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/mixColumns_8bit1.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'mixColumns_8bit1' (5#1) [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/mixColumns_8bit1.v:22]
+INFO: [Synth 8-6157] synthesizing module 'mixColumns_8bit2' [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/mixColumns_8bit2.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'mixColumns_8bit2' (6#1) [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/mixColumns_8bit2.v:22]
+INFO: [Synth 8-6157] synthesizing module 'mixColumns_8bit3' [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/mixColumns_8bit3.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'mixColumns_8bit3' (7#1) [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/mixColumns_8bit3.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'mixColumns_32bit' (8#1) [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/mixColumns_32bit.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'mixColumns' (9#1) [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/mixColumns.v:25]
+INFO: [Synth 8-6157] synthesizing module 'keySchedule' [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/keySchedule.v:23]
+	Parameter BLOCK_SIZE bound to: 128 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* keep = "TRUE" *) [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/keySchedule.v:35]
+INFO: [Synth 8-5534] Detected attribute (* keep = "TRUE" *) [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/keySchedule.v:41]
+INFO: [Synth 8-226] default block is never used [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/keySchedule.v:171]
+INFO: [Synth 8-226] default block is never used [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/keySchedule.v:171]
+INFO: [Synth 8-226] default block is never used [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/keySchedule.v:171]
+INFO: [Synth 8-226] default block is never used [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/keySchedule.v:171]
+INFO: [Synth 8-6155] done synthesizing module 'keySchedule' (10#1) [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/keySchedule.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'top' (11#1) [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 468.324 ; gain = 156.656
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 468.324 ; gain = 156.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 468.324 ; gain = 156.656
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7vx485tffg1761-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/constrs_1/new/timing.xdc]
+Finished Parsing XDC File [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/constrs_1/new/timing.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/constrs_1/new/timing.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+WARNING: [Constraints 18-5210] No constraint will be written out.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 992.953 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:01:04 . Memory (MB): peak = 992.953 ; gain = 681.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7vx485tffg1761-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:01:04 . Memory (MB): peak = 992.953 ; gain = 681.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:01:04 . Memory (MB): peak = 992.953 ; gain = 681.285
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "key_generated" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'currentState_reg' in module 'top'
+INFO: [Synth 8-5544] ROM "start_addInitkey" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rst_counter" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "start_mixColumns" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "start_subBytes" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "start_shiftRows" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nextState" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nextState" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                fsm_idle |                          0000001 |                              000
+          fsm_addInitkey |                          0000010 |                              001
+            fsm_subBytes |                          0000100 |                              010
+           fsm_shiftRows |                          0001000 |                              011
+        fsm_mixColumns_1 |                          0010000 |                              100
+        fsm_mixColumns_2 |                          0100000 |                              101
+         fsm_addRoundkey |                          1000000 |                              110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'currentState_reg' using encoding 'one-hot' in module 'top'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:01:05 . Memory (MB): peak = 992.953 ; gain = 681.285
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   3 Input     32 Bit         XORs := 1     
+	   2 Input     32 Bit         XORs := 3     
+	   2 Input      8 Bit         XORs := 48    
+	   3 Input      8 Bit         XORs := 16    
+	   4 Input      8 Bit         XORs := 16    
++---Registers : 
+	              128 Bit    Registers := 4     
+	               32 Bit    Registers := 7     
+	                8 Bit    Registers := 16    
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input    128 Bit        Muxes := 3     
+	   2 Input     32 Bit        Muxes := 5     
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 32    
+	   7 Input      7 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 2     
+	   7 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input    128 Bit        Muxes := 1     
+	   7 Input      7 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 4     
+	   7 Input      1 Bit        Muxes := 1     
+Module addRoundkey 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 16    
++---Registers : 
+	              128 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module subBytes 
+Detailed RTL Component Info : 
++---Registers : 
+	              128 Bit    Registers := 1     
+Module shiftRows 
+Detailed RTL Component Info : 
++---Registers : 
+	              128 Bit    Registers := 1     
+Module mixColumns_8bit0 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 2     
+	   3 Input      8 Bit         XORs := 1     
+	   4 Input      8 Bit         XORs := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+Module mixColumns_8bit1 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 2     
+	   3 Input      8 Bit         XORs := 1     
+	   4 Input      8 Bit         XORs := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+Module mixColumns_8bit2 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 2     
+	   3 Input      8 Bit         XORs := 1     
+	   4 Input      8 Bit         XORs := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+Module mixColumns_8bit3 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 2     
+	   3 Input      8 Bit         XORs := 1     
+	   4 Input      8 Bit         XORs := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+Module mixColumns_32bit 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mixColumns 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input    128 Bit        Muxes := 1     
+Module keySchedule 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input     32 Bit         XORs := 1     
+	   2 Input     32 Bit         XORs := 3     
++---Registers : 
+	              128 Bit    Registers := 1     
+	               32 Bit    Registers := 3     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input    128 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 5     
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 2800 (col length:140)
+BRAMs: 2060 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:01:12 . Memory (MB): peak = 992.953 ; gain = 681.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|subBytes    | sbox       | 256x8         | LUT            | 
+|subBytes    | sbox0      | 256x8         | LUT            | 
+|subBytes    | sbox1      | 256x8         | LUT            | 
+|subBytes    | sbox2      | 256x8         | LUT            | 
+|subBytes    | sbox3      | 256x8         | LUT            | 
+|subBytes    | sbox4      | 256x8         | LUT            | 
+|subBytes    | sbox5      | 256x8         | LUT            | 
+|subBytes    | sbox6      | 256x8         | LUT            | 
+|subBytes    | sbox7      | 256x8         | LUT            | 
+|subBytes    | sbox8      | 256x8         | LUT            | 
+|subBytes    | sbox9      | 256x8         | LUT            | 
+|subBytes    | sbox10     | 256x8         | LUT            | 
+|subBytes    | sbox11     | 256x8         | LUT            | 
+|subBytes    | sbox12     | 256x8         | LUT            | 
+|subBytes    | sbox13     | 256x8         | LUT            | 
+|subBytes    | sbox14     | 256x8         | LUT            | 
+|keySchedule | sbox17     | 256x8         | LUT            | 
+|keySchedule | sbox16     | 256x8         | LUT            | 
+|keySchedule | sbox15     | 256x8         | LUT            | 
+|keySchedule | sbox       | 256x8         | LUT            | 
+|subBytes    | sbox       | 256x8         | LUT            | 
+|subBytes    | sbox0      | 256x8         | LUT            | 
+|subBytes    | sbox1      | 256x8         | LUT            | 
+|subBytes    | sbox2      | 256x8         | LUT            | 
+|subBytes    | sbox3      | 256x8         | LUT            | 
+|subBytes    | sbox4      | 256x8         | LUT            | 
+|subBytes    | sbox5      | 256x8         | LUT            | 
+|subBytes    | sbox6      | 256x8         | LUT            | 
+|subBytes    | sbox7      | 256x8         | LUT            | 
+|subBytes    | sbox8      | 256x8         | LUT            | 
+|subBytes    | sbox9      | 256x8         | LUT            | 
+|subBytes    | sbox10     | 256x8         | LUT            | 
+|subBytes    | sbox11     | 256x8         | LUT            | 
+|subBytes    | sbox12     | 256x8         | LUT            | 
+|subBytes    | sbox13     | 256x8         | LUT            | 
+|subBytes    | sbox14     | 256x8         | LUT            | 
+|keySchedule | sbox       | 256x8         | LUT            | 
++------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:01:21 . Memory (MB): peak = 992.953 ; gain = 681.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:01:21 . Memory (MB): peak = 992.953 ; gain = 681.285
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+Found timing loop:
+     0: i_1756/O (LUT2)
+     1: i_1756/I0 (LUT2)
+     2: i_1300/O (LUT3)
+     3: i_1300/I2 (LUT3)
+     4: i_1756/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1756"
+Found timing loop:
+     0: i_1755/O (LUT2)
+     1: i_1755/I0 (LUT2)
+     2: i_1299/O (LUT3)
+     3: i_1299/I2 (LUT3)
+     4: i_1755/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1755"
+Found timing loop:
+     0: i_1754/O (LUT2)
+     1: i_1754/I0 (LUT2)
+     2: i_1298/O (LUT3)
+     3: i_1298/I2 (LUT3)
+     4: i_1754/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1754"
+Found timing loop:
+     0: i_1753/O (LUT2)
+     1: i_1753/I0 (LUT2)
+     2: i_1297/O (LUT3)
+     3: i_1297/I2 (LUT3)
+     4: i_1753/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1753"
+Found timing loop:
+     0: i_1752/O (LUT2)
+     1: i_1752/I0 (LUT2)
+     2: i_1296/O (LUT3)
+     3: i_1296/I2 (LUT3)
+     4: i_1752/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1752"
+Found timing loop:
+     0: i_1751/O (LUT2)
+     1: i_1751/I0 (LUT2)
+     2: i_1295/O (LUT3)
+     3: i_1295/I2 (LUT3)
+     4: i_1751/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1751"
+Found timing loop:
+     0: i_1750/O (LUT2)
+     1: i_1750/I0 (LUT2)
+     2: i_1294/O (LUT3)
+     3: i_1294/I2 (LUT3)
+     4: i_1750/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1750"
+Found timing loop:
+     0: i_1749/O (LUT2)
+     1: i_1749/I0 (LUT2)
+     2: i_1293/O (LUT3)
+     3: i_1293/I2 (LUT3)
+     4: i_1749/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1749"
+Found timing loop:
+     0: i_1748/O (LUT2)
+     1: i_1748/I0 (LUT2)
+     2: i_1292/O (LUT3)
+     3: i_1292/I2 (LUT3)
+     4: i_1748/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1748"
+Found timing loop:
+     0: i_1747/O (LUT2)
+     1: i_1747/I0 (LUT2)
+     2: i_1291/O (LUT3)
+     3: i_1291/I2 (LUT3)
+     4: i_1747/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1747"
+Found timing loop:
+     0: i_1746/O (LUT2)
+     1: i_1746/I0 (LUT2)
+     2: i_1290/O (LUT3)
+     3: i_1290/I2 (LUT3)
+     4: i_1746/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1746"
+Found timing loop:
+     0: i_1745/O (LUT2)
+     1: i_1745/I0 (LUT2)
+     2: i_1289/O (LUT3)
+     3: i_1289/I2 (LUT3)
+     4: i_1745/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1745"
+Found timing loop:
+     0: i_1744/O (LUT2)
+     1: i_1744/I0 (LUT2)
+     2: i_1288/O (LUT3)
+     3: i_1288/I2 (LUT3)
+     4: i_1744/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1744"
+Found timing loop:
+     0: i_1743/O (LUT2)
+     1: i_1743/I0 (LUT2)
+     2: i_1287/O (LUT3)
+     3: i_1287/I2 (LUT3)
+     4: i_1743/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1743"
+Found timing loop:
+     0: i_1742/O (LUT2)
+     1: i_1742/I0 (LUT2)
+     2: i_1286/O (LUT3)
+     3: i_1286/I2 (LUT3)
+     4: i_1742/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1742"
+Found timing loop:
+     0: i_1741/O (LUT2)
+     1: i_1741/I0 (LUT2)
+     2: i_1285/O (LUT3)
+     3: i_1285/I2 (LUT3)
+     4: i_1741/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1741"
+Found timing loop:
+     0: i_1740/O (LUT2)
+     1: i_1740/I0 (LUT2)
+     2: i_1284/O (LUT3)
+     3: i_1284/I2 (LUT3)
+     4: i_1740/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1740"
+Found timing loop:
+     0: i_1739/O (LUT2)
+     1: i_1739/I0 (LUT2)
+     2: i_1283/O (LUT3)
+     3: i_1283/I2 (LUT3)
+     4: i_1739/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1739"
+Found timing loop:
+     0: i_1738/O (LUT2)
+     1: i_1738/I0 (LUT2)
+     2: i_1282/O (LUT3)
+     3: i_1282/I2 (LUT3)
+     4: i_1738/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1738"
+Found timing loop:
+     0: i_1737/O (LUT2)
+     1: i_1737/I0 (LUT2)
+     2: i_1281/O (LUT3)
+     3: i_1281/I2 (LUT3)
+     4: i_1737/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1737"
+Found timing loop:
+     0: i_1736/O (LUT2)
+     1: i_1736/I0 (LUT2)
+     2: i_1280/O (LUT3)
+     3: i_1280/I2 (LUT3)
+     4: i_1736/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1736"
+Found timing loop:
+     0: i_1735/O (LUT2)
+     1: i_1735/I0 (LUT2)
+     2: i_1279/O (LUT3)
+     3: i_1279/I2 (LUT3)
+     4: i_1735/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1735"
+Found timing loop:
+     0: i_1734/O (LUT2)
+     1: i_1734/I0 (LUT2)
+     2: i_1278/O (LUT3)
+     3: i_1278/I2 (LUT3)
+     4: i_1734/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1734"
+Found timing loop:
+     0: i_1733/O (LUT2)
+     1: i_1733/I0 (LUT2)
+     2: i_1277/O (LUT3)
+     3: i_1277/I2 (LUT3)
+     4: i_1733/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1733"
+Found timing loop:
+     0: i_1732/O (LUT2)
+     1: i_1732/I0 (LUT2)
+     2: i_1276/O (LUT3)
+     3: i_1276/I2 (LUT3)
+     4: i_1732/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1732"
+Found timing loop:
+     0: i_1731/O (LUT2)
+     1: i_1731/I0 (LUT2)
+     2: i_1275/O (LUT3)
+     3: i_1275/I2 (LUT3)
+     4: i_1731/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1731"
+Found timing loop:
+     0: i_1730/O (LUT2)
+     1: i_1730/I0 (LUT2)
+     2: i_1274/O (LUT3)
+     3: i_1274/I2 (LUT3)
+     4: i_1730/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1730"
+Found timing loop:
+     0: i_1729/O (LUT2)
+     1: i_1729/I0 (LUT2)
+     2: i_1273/O (LUT3)
+     3: i_1273/I2 (LUT3)
+     4: i_1729/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1729"
+Found timing loop:
+     0: i_1728/O (LUT2)
+     1: i_1728/I0 (LUT2)
+     2: i_1272/O (LUT3)
+     3: i_1272/I2 (LUT3)
+     4: i_1728/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1728"
+Found timing loop:
+     0: i_1727/O (LUT2)
+     1: i_1727/I0 (LUT2)
+     2: i_1271/O (LUT3)
+     3: i_1271/I2 (LUT3)
+     4: i_1727/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1727"
+Found timing loop:
+     0: i_1726/O (LUT2)
+     1: i_1726/I0 (LUT2)
+     2: i_1270/O (LUT3)
+     3: i_1270/I2 (LUT3)
+     4: i_1726/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1726"
+Found timing loop:
+     0: i_1725/O (LUT2)
+     1: i_1725/I0 (LUT2)
+     2: i_1269/O (LUT3)
+     3: i_1269/I2 (LUT3)
+     4: i_1725/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1725"
+Found timing loop:
+     0: i_1724/O (LUT2)
+     1: i_1724/I0 (LUT2)
+     2: i_1268/O (LUT3)
+     3: i_1268/I2 (LUT3)
+     4: i_1724/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1724"
+Found timing loop:
+     0: i_1723/O (LUT2)
+     1: i_1723/I0 (LUT2)
+     2: i_1267/O (LUT3)
+     3: i_1267/I2 (LUT3)
+     4: i_1723/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1723"
+Found timing loop:
+     0: i_1722/O (LUT2)
+     1: i_1722/I0 (LUT2)
+     2: i_1266/O (LUT3)
+     3: i_1266/I2 (LUT3)
+     4: i_1722/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1722"
+Found timing loop:
+     0: i_1721/O (LUT2)
+     1: i_1721/I0 (LUT2)
+     2: i_1265/O (LUT3)
+     3: i_1265/I2 (LUT3)
+     4: i_1721/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1721"
+Found timing loop:
+     0: i_1720/O (LUT2)
+     1: i_1720/I0 (LUT2)
+     2: i_1264/O (LUT3)
+     3: i_1264/I2 (LUT3)
+     4: i_1720/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1720"
+Found timing loop:
+     0: i_1719/O (LUT2)
+     1: i_1719/I0 (LUT2)
+     2: i_1263/O (LUT3)
+     3: i_1263/I2 (LUT3)
+     4: i_1719/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1719"
+Found timing loop:
+     0: i_1718/O (LUT2)
+     1: i_1718/I0 (LUT2)
+     2: i_1262/O (LUT3)
+     3: i_1262/I2 (LUT3)
+     4: i_1718/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1718"
+Found timing loop:
+     0: i_1717/O (LUT2)
+     1: i_1717/I0 (LUT2)
+     2: i_1261/O (LUT3)
+     3: i_1261/I2 (LUT3)
+     4: i_1717/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1717"
+Found timing loop:
+     0: i_1716/O (LUT2)
+     1: i_1716/I0 (LUT2)
+     2: i_1260/O (LUT3)
+     3: i_1260/I2 (LUT3)
+     4: i_1716/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1716"
+Found timing loop:
+     0: i_1715/O (LUT2)
+     1: i_1715/I0 (LUT2)
+     2: i_1259/O (LUT3)
+     3: i_1259/I2 (LUT3)
+     4: i_1715/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1715"
+Found timing loop:
+     0: i_1714/O (LUT2)
+     1: i_1714/I0 (LUT2)
+     2: i_1258/O (LUT3)
+     3: i_1258/I2 (LUT3)
+     4: i_1714/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1714"
+Found timing loop:
+     0: i_1713/O (LUT2)
+     1: i_1713/I0 (LUT2)
+     2: i_1257/O (LUT3)
+     3: i_1257/I2 (LUT3)
+     4: i_1713/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1713"
+Found timing loop:
+     0: i_1712/O (LUT2)
+     1: i_1712/I0 (LUT2)
+     2: i_1256/O (LUT3)
+     3: i_1256/I2 (LUT3)
+     4: i_1712/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1712"
+Found timing loop:
+     0: i_1711/O (LUT2)
+     1: i_1711/I0 (LUT2)
+     2: i_1255/O (LUT3)
+     3: i_1255/I2 (LUT3)
+     4: i_1711/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1711"
+Found timing loop:
+     0: i_1710/O (LUT2)
+     1: i_1710/I0 (LUT2)
+     2: i_1254/O (LUT3)
+     3: i_1254/I2 (LUT3)
+     4: i_1710/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1710"
+Found timing loop:
+     0: i_1709/O (LUT2)
+     1: i_1709/I0 (LUT2)
+     2: i_1253/O (LUT3)
+     3: i_1253/I2 (LUT3)
+     4: i_1709/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1709"
+Found timing loop:
+     0: i_1708/O (LUT2)
+     1: i_1708/I0 (LUT2)
+     2: i_1252/O (LUT3)
+     3: i_1252/I2 (LUT3)
+     4: i_1708/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1708"
+Found timing loop:
+     0: i_1707/O (LUT2)
+     1: i_1707/I0 (LUT2)
+     2: i_1251/O (LUT3)
+     3: i_1251/I2 (LUT3)
+     4: i_1707/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1707"
+Found timing loop:
+     0: i_1706/O (LUT2)
+     1: i_1706/I0 (LUT2)
+     2: i_1250/O (LUT3)
+     3: i_1250/I2 (LUT3)
+     4: i_1706/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1706"
+Found timing loop:
+     0: i_1705/O (LUT2)
+     1: i_1705/I0 (LUT2)
+     2: i_1249/O (LUT3)
+     3: i_1249/I2 (LUT3)
+     4: i_1705/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1705"
+Found timing loop:
+     0: i_1704/O (LUT2)
+     1: i_1704/I0 (LUT2)
+     2: i_1248/O (LUT3)
+     3: i_1248/I2 (LUT3)
+     4: i_1704/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1704"
+Found timing loop:
+     0: i_1703/O (LUT2)
+     1: i_1703/I0 (LUT2)
+     2: i_1247/O (LUT3)
+     3: i_1247/I2 (LUT3)
+     4: i_1703/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1703"
+Found timing loop:
+     0: i_1702/O (LUT2)
+     1: i_1702/I0 (LUT2)
+     2: i_1246/O (LUT3)
+     3: i_1246/I2 (LUT3)
+     4: i_1702/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1702"
+Found timing loop:
+     0: i_1701/O (LUT2)
+     1: i_1701/I0 (LUT2)
+     2: i_1245/O (LUT3)
+     3: i_1245/I2 (LUT3)
+     4: i_1701/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1701"
+Found timing loop:
+     0: i_1700/O (LUT2)
+     1: i_1700/I0 (LUT2)
+     2: i_1244/O (LUT3)
+     3: i_1244/I2 (LUT3)
+     4: i_1700/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1700"
+Found timing loop:
+     0: i_1699/O (LUT2)
+     1: i_1699/I0 (LUT2)
+     2: i_1243/O (LUT3)
+     3: i_1243/I2 (LUT3)
+     4: i_1699/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1699"
+Found timing loop:
+     0: i_1698/O (LUT2)
+     1: i_1698/I0 (LUT2)
+     2: i_1242/O (LUT3)
+     3: i_1242/I2 (LUT3)
+     4: i_1698/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1698"
+Found timing loop:
+     0: i_1697/O (LUT2)
+     1: i_1697/I0 (LUT2)
+     2: i_1241/O (LUT3)
+     3: i_1241/I2 (LUT3)
+     4: i_1697/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1697"
+Found timing loop:
+     0: i_1696/O (LUT2)
+     1: i_1696/I0 (LUT2)
+     2: i_1240/O (LUT3)
+     3: i_1240/I2 (LUT3)
+     4: i_1696/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1696"
+Found timing loop:
+     0: i_1695/O (LUT2)
+     1: i_1695/I0 (LUT2)
+     2: i_1239/O (LUT3)
+     3: i_1239/I2 (LUT3)
+     4: i_1695/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1695"
+Found timing loop:
+     0: i_1694/O (LUT2)
+     1: i_1694/I0 (LUT2)
+     2: i_1238/O (LUT3)
+     3: i_1238/I2 (LUT3)
+     4: i_1694/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1694"
+Found timing loop:
+     0: i_1693/O (LUT2)
+     1: i_1693/I0 (LUT2)
+     2: i_1237/O (LUT3)
+     3: i_1237/I2 (LUT3)
+     4: i_1693/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1693"
+Found timing loop:
+     0: i_1692/O (LUT2)
+     1: i_1692/I0 (LUT2)
+     2: i_1236/O (LUT3)
+     3: i_1236/I2 (LUT3)
+     4: i_1692/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1692"
+Found timing loop:
+     0: i_1691/O (LUT2)
+     1: i_1691/I0 (LUT2)
+     2: i_1235/O (LUT3)
+     3: i_1235/I2 (LUT3)
+     4: i_1691/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1691"
+Found timing loop:
+     0: i_1690/O (LUT2)
+     1: i_1690/I0 (LUT2)
+     2: i_1234/O (LUT3)
+     3: i_1234/I2 (LUT3)
+     4: i_1690/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1690"
+Found timing loop:
+     0: i_1689/O (LUT2)
+     1: i_1689/I0 (LUT2)
+     2: i_1233/O (LUT3)
+     3: i_1233/I2 (LUT3)
+     4: i_1689/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1689"
+Found timing loop:
+     0: i_1688/O (LUT2)
+     1: i_1688/I0 (LUT2)
+     2: i_1232/O (LUT3)
+     3: i_1232/I2 (LUT3)
+     4: i_1688/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1688"
+Found timing loop:
+     0: i_1687/O (LUT2)
+     1: i_1687/I0 (LUT2)
+     2: i_1231/O (LUT3)
+     3: i_1231/I2 (LUT3)
+     4: i_1687/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1687"
+Found timing loop:
+     0: i_1686/O (LUT2)
+     1: i_1686/I0 (LUT2)
+     2: i_1230/O (LUT3)
+     3: i_1230/I2 (LUT3)
+     4: i_1686/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1686"
+Found timing loop:
+     0: i_1685/O (LUT2)
+     1: i_1685/I0 (LUT2)
+     2: i_1229/O (LUT3)
+     3: i_1229/I2 (LUT3)
+     4: i_1685/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1685"
+Found timing loop:
+     0: i_1684/O (LUT2)
+     1: i_1684/I0 (LUT2)
+     2: i_1228/O (LUT3)
+     3: i_1228/I2 (LUT3)
+     4: i_1684/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1684"
+Found timing loop:
+     0: i_1683/O (LUT2)
+     1: i_1683/I0 (LUT2)
+     2: i_1227/O (LUT3)
+     3: i_1227/I2 (LUT3)
+     4: i_1683/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1683"
+Found timing loop:
+     0: i_1682/O (LUT2)
+     1: i_1682/I0 (LUT2)
+     2: i_1226/O (LUT3)
+     3: i_1226/I2 (LUT3)
+     4: i_1682/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1682"
+Found timing loop:
+     0: i_1681/O (LUT2)
+     1: i_1681/I0 (LUT2)
+     2: i_1225/O (LUT3)
+     3: i_1225/I2 (LUT3)
+     4: i_1681/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1681"
+Found timing loop:
+     0: i_1680/O (LUT2)
+     1: i_1680/I0 (LUT2)
+     2: i_1224/O (LUT3)
+     3: i_1224/I2 (LUT3)
+     4: i_1680/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1680"
+Found timing loop:
+     0: i_1679/O (LUT2)
+     1: i_1679/I0 (LUT2)
+     2: i_1223/O (LUT3)
+     3: i_1223/I2 (LUT3)
+     4: i_1679/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1679"
+Found timing loop:
+     0: i_1678/O (LUT2)
+     1: i_1678/I0 (LUT2)
+     2: i_1222/O (LUT3)
+     3: i_1222/I2 (LUT3)
+     4: i_1678/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1678"
+Found timing loop:
+     0: i_1677/O (LUT2)
+     1: i_1677/I0 (LUT2)
+     2: i_1221/O (LUT3)
+     3: i_1221/I2 (LUT3)
+     4: i_1677/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1677"
+Found timing loop:
+     0: i_1676/O (LUT2)
+     1: i_1676/I0 (LUT2)
+     2: i_1220/O (LUT3)
+     3: i_1220/I2 (LUT3)
+     4: i_1676/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1676"
+Found timing loop:
+     0: i_1675/O (LUT2)
+     1: i_1675/I0 (LUT2)
+     2: i_1219/O (LUT3)
+     3: i_1219/I2 (LUT3)
+     4: i_1675/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1675"
+Found timing loop:
+     0: i_1674/O (LUT2)
+     1: i_1674/I0 (LUT2)
+     2: i_1218/O (LUT3)
+     3: i_1218/I2 (LUT3)
+     4: i_1674/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1674"
+Found timing loop:
+     0: i_1673/O (LUT2)
+     1: i_1673/I0 (LUT2)
+     2: i_1217/O (LUT3)
+     3: i_1217/I2 (LUT3)
+     4: i_1673/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1673"
+Found timing loop:
+     0: i_1672/O (LUT2)
+     1: i_1672/I0 (LUT2)
+     2: i_1216/O (LUT3)
+     3: i_1216/I2 (LUT3)
+     4: i_1672/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1672"
+Found timing loop:
+     0: i_1671/O (LUT2)
+     1: i_1671/I0 (LUT2)
+     2: i_1215/O (LUT3)
+     3: i_1215/I2 (LUT3)
+     4: i_1671/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1671"
+Found timing loop:
+     0: i_1670/O (LUT2)
+     1: i_1670/I0 (LUT2)
+     2: i_1214/O (LUT3)
+     3: i_1214/I2 (LUT3)
+     4: i_1670/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1670"
+Found timing loop:
+     0: i_1669/O (LUT2)
+     1: i_1669/I0 (LUT2)
+     2: i_1213/O (LUT3)
+     3: i_1213/I2 (LUT3)
+     4: i_1669/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1669"
+Found timing loop:
+     0: i_1668/O (LUT2)
+     1: i_1668/I0 (LUT2)
+     2: i_1212/O (LUT3)
+     3: i_1212/I2 (LUT3)
+     4: i_1668/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1668"
+Found timing loop:
+     0: i_1667/O (LUT2)
+     1: i_1667/I0 (LUT2)
+     2: i_1211/O (LUT3)
+     3: i_1211/I2 (LUT3)
+     4: i_1667/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1667"
+Found timing loop:
+     0: i_1666/O (LUT2)
+     1: i_1666/I0 (LUT2)
+     2: i_1210/O (LUT3)
+     3: i_1210/I2 (LUT3)
+     4: i_1666/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1666"
+Found timing loop:
+     0: i_1665/O (LUT2)
+     1: i_1665/I0 (LUT2)
+     2: i_1209/O (LUT3)
+     3: i_1209/I2 (LUT3)
+     4: i_1665/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1665"
+Found timing loop:
+     0: i_1664/O (LUT2)
+     1: i_1664/I0 (LUT2)
+     2: i_1208/O (LUT3)
+     3: i_1208/I2 (LUT3)
+     4: i_1664/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1664"
+Found timing loop:
+     0: i_1663/O (LUT2)
+     1: i_1663/I0 (LUT2)
+     2: i_1207/O (LUT3)
+     3: i_1207/I2 (LUT3)
+     4: i_1663/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1663"
+Found timing loop:
+     0: i_1662/O (LUT2)
+     1: i_1662/I0 (LUT2)
+     2: i_1206/O (LUT3)
+     3: i_1206/I2 (LUT3)
+     4: i_1662/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1662"
+Found timing loop:
+     0: i_1661/O (LUT2)
+     1: i_1661/I0 (LUT2)
+     2: i_1205/O (LUT3)
+     3: i_1205/I2 (LUT3)
+     4: i_1661/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1661"
+Found timing loop:
+     0: i_1660/O (LUT2)
+     1: i_1660/I0 (LUT2)
+     2: i_1204/O (LUT3)
+     3: i_1204/I2 (LUT3)
+     4: i_1660/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1660"
+Found timing loop:
+     0: i_1659/O (LUT2)
+     1: i_1659/I0 (LUT2)
+     2: i_1203/O (LUT3)
+     3: i_1203/I2 (LUT3)
+     4: i_1659/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1659"
+Found timing loop:
+     0: i_1658/O (LUT2)
+     1: i_1658/I0 (LUT2)
+     2: i_1202/O (LUT3)
+     3: i_1202/I2 (LUT3)
+     4: i_1658/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+Inferred a: "set_disable_timing -from I0 -to O i_1658"
+Found timing loop:
+     0: i_1657/O (LUT2)
+     1: i_1657/I0 (LUT2)
+     2: i_1201/O (LUT3)
+     3: i_1201/I2 (LUT3)
+     4: i_1657/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.srcs/sources_1/new/top.v:23]
+INFO: [Common 17-14] Message 'Synth 8-295' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+Inferred a: "set_disable_timing -from I0 -to O i_1657"
+Found timing loop:
+     0: i_1656/O (LUT2)
+     1: i_1656/I0 (LUT2)
+     2: i_1200/O (LUT3)
+     3: i_1200/I2 (LUT3)
+     4: i_1656/O (LUT2)
+Inferred a: "set_disable_timing -from I0 -to O i_1656"
+Found timing loop:
+     0: i_1655/O (LUT2)
+     1: i_1655/I0 (LUT2)
+     2: i_1199/O (LUT3)
+     3: i_1199/I2 (LUT3)
+     4: i_1655/O (LUT2)
+Inferred a: "set_disable_timing -from I0 -to O i_1655"
+Found timing loop:
+     0: i_1654/O (LUT2)
+     1: i_1654/I0 (LUT2)
+     2: i_1198/O (LUT3)
+     3: i_1198/I2 (LUT3)
+     4: i_1654/O (LUT2)
+Inferred a: "set_disable_timing -from I0 -to O i_1654"
+Found timing loop:
+     0: i_1653/O (LUT2)
+     1: i_1653/I0 (LUT2)
+     2: i_1197/O (LUT3)
+     3: i_1197/I2 (LUT3)
+     4: i_1653/O (LUT2)
+Inferred a: "set_disable_timing -from I0 -to O i_1653"
+Found timing loop:
+     0: i_1652/O (LUT2)
+     1: i_1652/I0 (LUT2)
+     2: i_1196/O (LUT3)
+     3: i_1196/I2 (LUT3)
+     4: i_1652/O (LUT2)
+Inferred a: "set_disable_timing -from I0 -to O i_1652"
+Found timing loop:
+     0: i_1651/O (LUT2)
+     1: i_1651/I0 (LUT2)
+     2: i_1195/O (LUT3)
+     3: i_1195/I2 (LUT3)
+     4: i_1651/O (LUT2)
+Inferred a: "set_disable_timing -from I0 -to O i_1651"
+Found timing loop:
+     0: i_1650/O (LUT2)
+     1: i_1650/I0 (LUT2)
+     2: i_1194/O (LUT3)
+     3: i_1194/I2 (LUT3)
+     4: i_1650/O (LUT2)
+Inferred a: "set_disable_timing -from I0 -to O i_1650"
+Found timing loop:
+     0: i_1649/O (LUT2)
+     1: i_1649/I0 (LUT2)
+     2: i_1193/O (LUT3)
+     3: i_1193/I2 (LUT3)
+     4: i_1649/O (LUT2)
+Inferred a: "set_disable_timing -from I0 -to O i_1649"
+Found timing loop:
+     0: i_1648/O (LUT2)
+     1: i_1648/I0 (LUT2)
+     2: i_1192/O (LUT3)
+     3: i_1192/I2 (LUT3)
+     4: i_1648/O (LUT2)
+Inferred a: "set_disable_timing -from I0 -to O i_1648"
+Found timing loop:
+     0: i_1647/O (LUT2)
+     1: i_1647/I0 (LUT2)
+     2: i_1191/O (LUT3)
+     3: i_1191/I2 (LUT3)
+     4: i_1647/O (LUT2)
+Inferred a: "set_disable_timing -from I0 -to O i_1647"
+Found timing loop:
+     0: i_1646/O (LUT2)
+     1: i_1646/I0 (LUT2)
+     2: i_1190/O (LUT3)
+     3: i_1190/I2 (LUT3)
+     4: i_1646/O (LUT2)
+Inferred a: "set_disable_timing -from I0 -to O i_1646"
+Found timing loop:
+     0: i_1645/O (LUT2)
+     1: i_1645/I0 (LUT2)
+     2: i_1189/O (LUT3)
+     3: i_1189/I2 (LUT3)
+     4: i_1645/O (LUT2)
+Inferred a: "set_disable_timing -from I0 -to O i_1645"
+Found timing loop:
+     0: i_1644/O (LUT2)
+     1: i_1644/I0 (LUT2)
+     2: i_1188/O (LUT3)
+     3: i_1188/I2 (LUT3)
+     4: i_1644/O (LUT2)
+Inferred a: "set_disable_timing -from I0 -to O i_1644"
+Found timing loop:
+     0: i_1643/O (LUT2)
+     1: i_1643/I0 (LUT2)
+     2: i_1187/O (LUT3)
+     3: i_1187/I2 (LUT3)
+     4: i_1643/O (LUT2)
+Inferred a: "set_disable_timing -from I0 -to O i_1643"
+Found timing loop:
+     0: i_1642/O (LUT2)
+     1: i_1642/I0 (LUT2)
+     2: i_1186/O (LUT3)
+     3: i_1186/I2 (LUT3)
+     4: i_1642/O (LUT2)
+Inferred a: "set_disable_timing -from I0 -to O i_1642"
+Found timing loop:
+     0: i_1641/O (LUT2)
+     1: i_1641/I0 (LUT2)
+     2: i_1185/O (LUT3)
+     3: i_1185/I2 (LUT3)
+     4: i_1641/O (LUT2)
+Inferred a: "set_disable_timing -from I0 -to O i_1641"
+Found timing loop:
+     0: i_1640/O (LUT2)
+     1: i_1640/I0 (LUT2)
+     2: i_1184/O (LUT3)
+     3: i_1184/I2 (LUT3)
+     4: i_1640/O (LUT2)
+Inferred a: "set_disable_timing -from I0 -to O i_1640"
+Found timing loop:
+     0: i_1639/O (LUT2)
+     1: i_1639/I0 (LUT2)
+     2: i_1183/O (LUT3)
+     3: i_1183/I2 (LUT3)
+     4: i_1639/O (LUT2)
+Inferred a: "set_disable_timing -from I0 -to O i_1639"
+Found timing loop:
+     0: i_1638/O (LUT2)
+     1: i_1638/I0 (LUT2)
+     2: i_1182/O (LUT3)
+     3: i_1182/I2 (LUT3)
+     4: i_1638/O (LUT2)
+Inferred a: "set_disable_timing -from I0 -to O i_1638"
+Found timing loop:
+     0: i_1637/O (LUT2)
+     1: i_1637/I0 (LUT2)
+     2: i_1181/O (LUT3)
+     3: i_1181/I2 (LUT3)
+     4: i_1637/O (LUT2)
+Inferred a: "set_disable_timing -from I0 -to O i_1637"
+Found timing loop:
+     0: i_1636/O (LUT2)
+     1: i_1636/I0 (LUT2)
+     2: i_1180/O (LUT3)
+     3: i_1180/I2 (LUT3)
+     4: i_1636/O (LUT2)
+Inferred a: "set_disable_timing -from I0 -to O i_1636"
+Found timing loop:
+     0: i_1635/O (LUT2)
+     1: i_1635/I0 (LUT2)
+     2: i_1179/O (LUT3)
+     3: i_1179/I2 (LUT3)
+     4: i_1635/O (LUT2)
+Inferred a: "set_disable_timing -from I0 -to O i_1635"
+Found timing loop:
+     0: i_1634/O (LUT2)
+     1: i_1634/I0 (LUT2)
+     2: i_1178/O (LUT3)
+     3: i_1178/I2 (LUT3)
+     4: i_1634/O (LUT2)
+Inferred a: "set_disable_timing -from I0 -to O i_1634"
+Found timing loop:
+     0: i_1633/O (LUT2)
+     1: i_1633/I0 (LUT2)
+     2: i_1177/O (LUT3)
+     3: i_1177/I2 (LUT3)
+     4: i_1633/O (LUT2)
+Inferred a: "set_disable_timing -from I0 -to O i_1633"
+Found timing loop:
+     0: i_1632/O (LUT2)
+     1: i_1632/I0 (LUT2)
+     2: i_1176/O (LUT3)
+     3: i_1176/I2 (LUT3)
+     4: i_1632/O (LUT2)
+Inferred a: "set_disable_timing -from I0 -to O i_1632"
+Found timing loop:
+     0: i_1631/O (LUT2)
+     1: i_1631/I0 (LUT2)
+     2: i_1175/O (LUT3)
+     3: i_1175/I2 (LUT3)
+     4: i_1631/O (LUT2)
+Inferred a: "set_disable_timing -from I0 -to O i_1631"
+Found timing loop:
+     0: i_1630/O (LUT2)
+     1: i_1630/I0 (LUT2)
+     2: i_1174/O (LUT3)
+     3: i_1174/I2 (LUT3)
+     4: i_1630/O (LUT2)
+Inferred a: "set_disable_timing -from I0 -to O i_1630"
+Found timing loop:
+     0: i_1629/O (LUT2)
+     1: i_1629/I0 (LUT2)
+     2: i_1173/O (LUT3)
+     3: i_1173/I2 (LUT3)
+     4: i_1629/O (LUT2)
+Inferred a: "set_disable_timing -from I0 -to O i_1629"
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:01:22 . Memory (MB): peak = 995.926 ; gain = 684.258
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:01:23 . Memory (MB): peak = 995.926 ; gain = 684.258
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:01:23 . Memory (MB): peak = 995.926 ; gain = 684.258
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[127]_i_5 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[126]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[125]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[124]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[123]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[122]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[121]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[120]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[119]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[118]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[117]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[116]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[115]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[114]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[113]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[112]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[111]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[110]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[109]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[108]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[107]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[106]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[105]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[104]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[103]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[102]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[101]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[100]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[99]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[98]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[97]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[96]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[95]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[94]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[93]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[92]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[91]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[90]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[89]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[88]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[87]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[86]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[85]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[84]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[83]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[82]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[81]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[80]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[79]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[78]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[77]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[76]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[75]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[74]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[73]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[72]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[71]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[70]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[69]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[68]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[67]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[66]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[65]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[64]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[63]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[62]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[61]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[60]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[59]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[58]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[57]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[56]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[55]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[54]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[53]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[52]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[51]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[50]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[49]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[48]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[47]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[46]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[45]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[44]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[43]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[42]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[41]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[40]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[39]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[38]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[37]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[36]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[35]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[34]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[33]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[32]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[31]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[30]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[29]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \data_o[28]_i_3 /O'
+INFO: [Common 17-14] Message 'Synth 8-326' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:37 ; elapsed = 00:01:23 . Memory (MB): peak = 995.926 ; gain = 684.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:37 ; elapsed = 00:01:23 . Memory (MB): peak = 995.926 ; gain = 684.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:37 ; elapsed = 00:01:23 . Memory (MB): peak = 995.926 ; gain = 684.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:37 ; elapsed = 00:01:23 . Memory (MB): peak = 995.926 ; gain = 684.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |BUFG  |     1|
+|2     |LUT1  |     3|
+|3     |LUT2  |    42|
+|4     |LUT3  |    36|
+|5     |LUT4  |   173|
+|6     |LUT5  |   179|
+|7     |LUT6  |   977|
+|8     |MUXF7 |   320|
+|9     |MUXF8 |   160|
+|10    |FDCE  |     6|
+|11    |FDPE  |     1|
+|12    |FDRE  |   875|
+|13    |IBUF  |   259|
+|14    |OBUF  |     1|
+|15    |OBUFT |   128|
++------+------+------+
+
+Report Instance Areas: 
++------+-------------------+--------------------+------+
+|      |Instance           |Module              |Cells |
++------+-------------------+--------------------+------+
+|1     |top                |                    |  3161|
+|2     |  addRoundkey_inst |addRoundkey         |   645|
+|3     |  keySchedule_inst |keySchedule         |   661|
+|4     |  mixColumns_inst  |mixColumns          |   386|
+|5     |    first_column   |mixColumns_32bit    |    96|
+|6     |      for_c        |mixColumns_8bit3_11 |     8|
+|7     |      fr_c         |mixColumns_8bit0_12 |     8|
+|8     |      sr_c         |mixColumns_8bit1_13 |     8|
+|9     |      tr_c         |mixColumns_8bit2_14 |     8|
+|10    |    fourth_column  |mixColumns_32bit_0  |    96|
+|11    |      for_c        |mixColumns_8bit3_7  |     8|
+|12    |      fr_c         |mixColumns_8bit0_8  |     8|
+|13    |      sr_c         |mixColumns_8bit1_9  |     8|
+|14    |      tr_c         |mixColumns_8bit2_10 |     8|
+|15    |    second_column  |mixColumns_32bit_1  |    96|
+|16    |      for_c        |mixColumns_8bit3_3  |     8|
+|17    |      fr_c         |mixColumns_8bit0_4  |     8|
+|18    |      sr_c         |mixColumns_8bit1_5  |     8|
+|19    |      tr_c         |mixColumns_8bit2_6  |     8|
+|20    |    third_column   |mixColumns_32bit_2  |    96|
+|21    |      for_c        |mixColumns_8bit3    |     8|
+|22    |      fr_c         |mixColumns_8bit0    |     8|
+|23    |      sr_c         |mixColumns_8bit1    |     8|
+|24    |      tr_c         |mixColumns_8bit2    |     8|
+|25    |  shiftRows_inst   |shiftRows           |   548|
+|26    |  subBytes_inst    |subBytes            |   512|
++------+-------------------+--------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:37 ; elapsed = 00:01:23 . Memory (MB): peak = 995.926 ; gain = 684.258
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 128 critical warnings and 128 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 995.926 ; gain = 159.629
+Synthesis Optimization Complete : Time (s): cpu = 00:00:37 ; elapsed = 00:01:23 . Memory (MB): peak = 995.926 ; gain = 684.258
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 739 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+68 Infos, 101 Warnings, 100 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:40 ; elapsed = 00:01:37 . Memory (MB): peak = 1003.098 ; gain = 704.438
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/nitheesh/Desktop/Course work/advanced_encryption_algorithm/advanced_encryption_algorithm.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.488 . Memory (MB): peak = 1003.098 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Apr  9 10:45:34 2019...
