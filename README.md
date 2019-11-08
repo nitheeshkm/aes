@@ -13,5 +13,3 @@ Decryption
 Build interface to communicate with processor (SPI using FIFO)
 
 Parallelise many ASIC co-processors for parallel 128 bit implementation
-
-Compare performance energy, performance with FPGA implementation
